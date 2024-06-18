@@ -10,11 +10,12 @@ COPY package*.json ./
 # Instal dependensi menggunakan npm
 RUN npm install
 
+
 # Salin seluruh kode sumber proyek
 COPY . .
 
 # Port yang akan diexpose oleh aplikasi
-EXPOSE 3000
+EXPOSE 8080
 
 # Perintah yang akan dijalankan saat kontainer dijalankan
 CMD ["npm", "run", "start"]

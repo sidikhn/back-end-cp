@@ -67,22 +67,6 @@ module.exports = {
     });
   },
 
-  // getUserbyEmail: (email, callback) => {
-  //     pool.query(
-  //         `select * from users where email=?`,
-  //         [email],
-  //         (error, results, fields) => {
-  //             if (error) {
-  //                 console.error('Error in getUserbyEmail query:', error);
-  //                 return callback(error);
-  //             }
-
-  //             console.log('Results from getUserbyEmail:', results);
-
-  //             callback(null, results);
-  //         }
-  //     );
-  // }
 
   getUserbyEmail: async (email) => {
     return new Promise((resolve, reject) => {
